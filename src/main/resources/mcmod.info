@@ -1,0 +1,25 @@
+{
+	"modListVersion": 2,
+	"modList": [
+		{
+			"modid": "InGameModConfigs",
+			"name": "InGame Mod Configs",
+			"description": "Replaces the FML test config GUI with a functional menu.",
+			"mcversion": "${mcversion}",
+			"version": "${version}",
+			"authorList": [
+				"Lunatrius"
+			],
+			"credits": "",
+			"dependants": [  ],
+			"dependencies": [ "Forge@[${minforgeversion},)" ],
+			"parent": "",
+			"requiredMods": [ "Forge@[${minforgeversion},)" ],
+			"logoFile": "",
+			"screenshots": [  ],
+			"updateUrl": "http://mc.lunatri.us/",
+			"url": "http://mc.lunatri.us/",
+			"useDependencyInformation": true
+		}
+	]
+}
