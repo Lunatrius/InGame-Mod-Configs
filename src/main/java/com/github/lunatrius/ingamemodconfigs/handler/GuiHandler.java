@@ -1,17 +1,16 @@
 package com.github.lunatrius.ingamemodconfigs.handler;
 
-
 import com.github.lunatrius.ingamemodconfigs.reference.Reference;
-import cpw.mods.fml.client.FMLClientHandler;
-import cpw.mods.fml.client.GuiIngameModOptions;
-import cpw.mods.fml.client.GuiModList;
-import cpw.mods.fml.client.IModGuiFactory;
-import cpw.mods.fml.common.ModContainer;
-import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import cpw.mods.fml.relauncher.ReflectionHelper;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraftforge.client.event.GuiOpenEvent;
+import net.minecraftforge.fml.client.FMLClientHandler;
+import net.minecraftforge.fml.client.GuiIngameModOptions;
+import net.minecraftforge.fml.client.GuiModList;
+import net.minecraftforge.fml.client.IModGuiFactory;
+import net.minecraftforge.fml.common.ModContainer;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.relauncher.ReflectionHelper;
 
 import java.lang.reflect.Field;
 import java.util.Iterator;

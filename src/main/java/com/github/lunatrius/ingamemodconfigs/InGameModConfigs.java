@@ -2,20 +2,18 @@ package com.github.lunatrius.ingamemodconfigs;
 
 import com.github.lunatrius.ingamemodconfigs.handler.GuiHandler;
 import com.github.lunatrius.ingamemodconfigs.reference.Reference;
-import cpw.mods.fml.common.FMLCommonHandler;
-import cpw.mods.fml.common.Mod;
-import cpw.mods.fml.common.Mod.EventHandler;
-import cpw.mods.fml.common.Mod.Instance;
-import cpw.mods.fml.common.event.FMLInitializationEvent;
-import cpw.mods.fml.common.network.NetworkCheckHandler;
-import cpw.mods.fml.relauncher.Side;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.common.FMLCommonHandler;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.network.NetworkCheckHandler;
+import net.minecraftforge.fml.relauncher.Side;
 
 import java.util.Map;
 
 @Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION)
 public class InGameModConfigs {
-    @Instance(Reference.MODID)
+    @Mod.Instance(Reference.MODID)
     public static InGameModConfigs instance;
 
     @NetworkCheckHandler
@@ -23,7 +21,7 @@ public class InGameModConfigs {
         return true;
     }
 
-    @EventHandler
+    @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         if (FMLCommonHandler.instance().getSide().isServer()) {
             for (int i = 0; i < 5; i++) {
